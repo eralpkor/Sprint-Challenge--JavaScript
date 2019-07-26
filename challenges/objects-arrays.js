@@ -87,7 +87,8 @@ console.log("Contact info: ", contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = graduates.filter(val => val.university.includes('Uni')).map(val => val.university);
-// I don't quite get the question??? If we need only University names I would run this code. If we need the object I would remove `.map()` method.
+// I don't quite get the question??? If we need only University names 
+//I would run this code. If we need the object I would remove `.map()` method.
 console.log("'Only 'uni'", uni);
 
 
