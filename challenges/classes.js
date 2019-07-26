@@ -69,7 +69,5 @@ let cuboid2 = new CubeMaker({
   height: 3
 });
 
-
-
 console.log(`Cube maker stretch solution ${cuboid2.volume()}`);
 console.log(`Cube maker stretch solution ${cuboid2.surfaceArea()}`);
