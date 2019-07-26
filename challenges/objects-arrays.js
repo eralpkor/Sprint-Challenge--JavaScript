@@ -7,7 +7,16 @@
 */
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-
+const trex = ({
+  "object name": "tyrannosaurus",
+  "diet": "carnivorous",
+  "weight": "7000kg",
+  "length": "12m",
+  "period": "Late Cretaceious",
+   roar: function(){
+    return `RAWERSRARARWERSARARARRRR!`;
+  }
+});
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
@@ -123,3 +132,4 @@ Stretch: If you haven't already, convert your array method callbacks into arrow 
 
 */
 
+console.log('**************** End of arrays ******************');

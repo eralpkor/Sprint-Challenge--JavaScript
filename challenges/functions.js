@@ -34,7 +34,7 @@ console.log(consume(10,16,multiply)); // 160
 console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
-// ==== Closures ==== 
+console.log('==== Closures ==== ');
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
@@ -44,6 +44,7 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 // nestedFunction can access to `internal` because myFunction is the parent of nestedFunction. nestedFunction has outside scope from it's parent. Functions can
 // access outside scope but if there were a variable inside nestedFunction myFunction 
 // couldn't access to nestedFucntion's scope.
+// We're also invoking nestedFunction inside myFunction, if not it would not work
 
 const external = "I'm outside the function";
 
@@ -57,3 +58,11 @@ function myFunction() {
   nestedFunction();
 }
 myFunction();
+
+
+
+
+console.log('');
+console.log('**************** End of functions ******************');
+
+//EOF
