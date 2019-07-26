@@ -39,7 +39,7 @@ class CubeMaker extends CuboidMakerClass {
   volume() {
     return this.length * this.length * this.length;
   }
-  // @)verride
+  // @)Override
   surfaceArea() {
     return 6 * (this.height ^ 2);
   }
