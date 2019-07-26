@@ -1,14 +1,7 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
-// function CuboidMaker(options) {
-//   this.length = options.length;
-//   this.width = options.width;
-//   this.height = options.height;
-// }
-
-  class CuboidMakerClass {
+class CuboidMakerClass {
   constructor(options) {
-    // super(options);
     this.length = options.length;
     this.width = options.width;
     this.height = options.height;
@@ -20,10 +13,8 @@
 
   surfaceArea() {
     return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
-    }
   }
-
-
+}
 
 
 let cuboid1 = new CuboidMaker({
@@ -32,10 +23,9 @@ let cuboid1 = new CuboidMaker({
   height: 5
 });
 
-
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 
-console.log('Volume: ',cuboid.volume()); // 100
+console.log('Volume: ', cuboid.volume()); // 100
 console.log('Surface Area', cuboid.surfaceArea()); // 130
 
 
@@ -44,6 +34,14 @@ console.log('Surface Area', cuboid.surfaceArea()); // 130
 class CubeMaker extends CuboidMakerClass {
   constructor(options) {
     super(options);
+  }
+  // @Override
+  volume() {
+    return this.length * this.length * this.length;
+  }
+  // @)verride
+  surfaceArea() {
+    return 6 * (this.height ^ 2);
   }
 }
 
@@ -59,11 +57,9 @@ let cuboid3 = new CubeMaker({
   height: 5
 });
 
-console.log(`Cube maker stretch solution ${cuboid2.volume()}`);
-console.log(`Cube maker stretch solution ${cuboid2.surfaceArea()}`);
+console.log(`Cube maker stretch solution volume `, cuboid2.volume());
+console.log(`Cube maker stretch solution surface`, cuboid2.surfaceArea());
 
-console.log(`Cube maker stretch solution ${cuboid3.volume()}`);
+console.log(`Cube maker stretch solution volume`, cuboid3.volume());
 
-console.log(`Cube maker stretch solution ${cuboid3.surfaceArea()}`);
-
-
+console.log(`Cube maker stretch solution surface`, cuboid3.surfaceArea());
